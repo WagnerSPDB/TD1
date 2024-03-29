@@ -19,11 +19,9 @@ body {
     padding: 20px;
 }
 
-
 .content a{
     text-decoration: none;
 }
-
 
 .navbar a {
     text-align: center;
@@ -62,18 +60,41 @@ html {
 
 @media only screen and (max-width: 600px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar a {
-        margin: 5px 0;
-
-        font-size: 15px;
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 10%;
+        top: 0;
+        left: 0;
     }
 
     .perfil{
-        width: 100%;
+        width: 70px;
         height: auto;
-        margin-right: 10px;
+        margin: 0 auto;
     }
+
+    .perfil-container {
+        width: 20%;
+        float: left; /* Faz a div flutuar à esquerda */
+    }
+
+    .links-container {
+        width: 80%;
+        float: left; 
+        display: flex;
+        flex-wrap: wrap;/* Faz a div flutuar à esquerda */
+    }
+
+    .grupo {
+        width: 40%;
+        box-sizing: border-box; 
+        padding: 10px; 
+        margin-left: 10px;
+    }
+
+    .content{
+        margin-top: 25%;
+        margin-left: 0%;
+    }
+
